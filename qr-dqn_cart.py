@@ -179,9 +179,9 @@ for episode_idx in range(1, num_episodes + 1):
         
         # Save data and model parameters
         np.save("results/cart_rewards_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        np.save("results/cart_losses_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        np.save("results/cart_stat_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        np.save("results/cart_dists_%s_%s" %(behaviour_p, episode_idx), all_rewards)
+        np.save("results/cart_losses_%s_%s" %(behaviour_p, episode_idx), losses)
+        np.save("results/cart_stat_%s_%s" %(behaviour_p, episode_idx), stats)
+        np.save("results/cart_dists_%s_%s" %(behaviour_p, episode_idx), dists)
         torch.save(current_model.state_dict(), "results/cart_model_%s_%s" %(behaviour_p, episode_idx))
         
         
