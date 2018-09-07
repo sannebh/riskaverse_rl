@@ -181,9 +181,9 @@ for episode_idx in range(1, num_episodes + 1):
         update_target(current_model, target_model) # save model
         
         # Save data and model parameters
-        np.save("/Users/sannebjartmar/Desktop/Thesis/results/cart_rewards_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        np.save("/Users/sannebjartmar/Desktop/Thesis/results/cart_losses_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        np.save("/Users/sannebjartmar/Desktop/Thesis/results/cart_stat_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        np.save("/Users/sannebjartmar/Desktop/Thesis/results/cart_dists_%s_%s" %(behaviour_p, episode_idx), all_rewards)
-        torch.save(current_model.state_dict(), "/Users/sannebjartmar/Desktop/Thesis/results/cart_model_%s_%s" %(behaviour_p, episode_idx))
+        np.save("results/cart_rewards_%s_%s" %(behaviour_p, episode_idx), all_rewards)
+        np.save("results/cart_losses_%s_%s" %(behaviour_p, episode_idx), all_rewards)
+        np.save("results/cart_stat_%s_%s" %(behaviour_p, episode_idx), all_rewards)
+        np.save("results/cart_dists_%s_%s" %(behaviour_p, episode_idx), all_rewards)
+        torch.save(current_model.state_dict(), "results/cart_model_%s_%s" %(behaviour_p, episode_idx))
         
