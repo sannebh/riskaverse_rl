@@ -13,6 +13,6 @@ The risk averse strategies can be found in risk_strategies.py. wind_world.py and
 qr-dqn_cart and qr-dqn_windy contains the implementations themselves, in Cartpole Environment and Windy Gridworld environment.  
 To download:
 
-'''
+```
 git clone https://github.com/sannebh/riskaverse_rl/
-'''
+```
